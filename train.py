@@ -81,7 +81,7 @@ model = Sequential([
 
 model.compile(optimizer=Adam(lr=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
-model.fit(x_train,y_train,validation_data=(x_test,y_test),epochs=20)
+model.fit(x_train,y_train,validation_data=(x_test,y_test),epochs=100)
 
 # 將訓練好的model儲存成json及h5檔
 import json
